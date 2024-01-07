@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Book;
 
 use App\Http\Controllers\Controller;
 use App\Models\Book;
+use App\Services\BookService;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -11,9 +12,9 @@ class IndexController extends Controller
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request)
+    public function __invoke(Request $request, BookService $service)
     {
-        $books = Book::paginate(20);
+        $books = $service->getBooksOrderByCreatedAtDescANdPaging();
 
         return view('book.index')
                 ->with('books', $books);

@@ -23,7 +23,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/books', \App\Http\Controllers\Book\IndexController::class)->name('books');
-Route::get('/books/create', \App\Http\Controllers\Book\Create\IndexController::class)->name('books.create');
+Route::get('/books/create', \App\Http\Controllers\Book\Create\IndexController::class)->name('books.create.index');
+Route::post('/books/create', \App\Http\Controllers\Book\Create\PostController::class)->name('books.create.post');
 Route::get('/books/detail/{bookId}', \App\Http\Controllers\Book\DetailController::class)->name('books.detail-bookId');
 
 Route::middleware('auth')->group(function () {
