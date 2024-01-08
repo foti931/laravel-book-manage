@@ -13,7 +13,7 @@ class BookService
      */
     public function getBook(int $bookId):Book
     {
-        return Book::where('id',$bookId)->firstOrFail();
+        return Book::with('images')->where('id',$bookId)->firstOrFail();
     }
 
     /**
@@ -21,6 +21,6 @@ class BookService
      */
     public function getBooksOrderByCreatedAtDescANdPaging()
     {
-        return Book::orderBy('created_at', 'DESC')->paginate(20);
+        return Book::with('images')->orderBy('created_at', 'DESC')->paginate(20);
     }
 }

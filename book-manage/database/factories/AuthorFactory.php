@@ -20,7 +20,6 @@ class AuthorFactory extends Factory
             'first_name' => $this->faker->firstName,
             'last_name' => $this->faker->lastName,
             'birth_day' => $this->faker->date('Y-m-d'),
-
         ];
     }
 }

@@ -8,34 +8,6 @@
                         <p>{{ session('feedback.success') }}</p>
                     @endif
                     <h2 class="text-gray-900 text-lg font-medium title-font mb-5">書籍登録</h2>
-{{--                    <div class="relative mb-4">--}}
-{{--                        <label for="full-name" class="leading-7 text-sm text-gray-600">フルネーム</label>--}}
-{{--                        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
-{{--                    </div>--}}
-{{--                    <div class="mb-4 flex">--}}
-{{--                        <div class="relative mr-10 w-6/12">--}}
-{{--                            <label for="last-name" class="leading-7 text-sm text-gray-600">苗字</label>--}}
-{{--                            <input type="text" id="last-name" name="last-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
-{{--                        </div>--}}
-{{--                        <div class="relative w-6/12">--}}
-{{--                            <label for="first-name" class="leading-7 text-sm text-gray-600">名前</label>--}}
-{{--                            <input type="text" id="first-name" name="first-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="mb-4 flex">--}}
-{{--                        <div class="relative mr-10 w-6/12">--}}
-{{--                            <label for="last-name-kana" class="leading-7 text-sm text-gray-600">フリガナ(苗字)</label>--}}
-{{--                            <input type="text" id="last-name-kana" name="last-name-kana" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
-{{--                        </div>--}}
-{{--                        <div class="relative w-6/12">--}}
-{{--                            <label for="first-name-kana" class="leading-7 text-sm text-gray-600">フリガナ(名前)</label>--}}
-{{--                            <input type="text" id="first-name-kana" name="first-name-kana" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="relative mb-4">--}}
-{{--                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>--}}
-{{--                        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
-{{--                    </div>--}}
                     <div class="relative mb-4">
                         <label for="title" class="leading-7 text-sm text-gray-600">書籍名</label>
                         <input type="text" id="title" name="title" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" value="{{ old('title') }}">

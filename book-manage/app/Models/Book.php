@@ -25,6 +25,15 @@ class Book extends Model
     public function authors():BelongsToMany
     {
         return $this->belongsToMany(Author::class, 'book_authors')
-                ->withPivot('authors.last_name');
+                ->using(Author::class);
+    }
+
+    /**
+     * @return BelongsToMany
+     */
+    public function images():BelongsToMany
+    {
+        return $this->belongsToMany(Image::class, 'book_images')
+            ->using(BookImage::class);
     }
 }
